@@ -7,9 +7,9 @@
 3. 点击修改按钮弹出修改模态框，自动显示当前修改的个人信息，修改内容后点击保存，刷新个人信息列表
 4. 编辑页点击取消或“x”，个人信息不做修改
 
-## 3 技术难点
+## 2 技术难点
 
-### 3.1 css样式
+### 2.1 css样式
 1. 实现精灵图
 	.aside li>div {
 		width: 30px;
@@ -54,7 +54,7 @@
 		z-index: 2;
 		/* display: none; */
 	}
-### 3.2 js编写
+### 2.2 js编写
 1. button按钮点击不起作用
 	原因：IE中button的默认值是 "button"，而其他浏览器中的默认值是 "submit"
 	解决：在<button>中添加属性 type="button"
@@ -83,6 +83,6 @@
 	点击保存：this.form1 = Object.assign({}, this.form2);
 			  this.form1.sex = this.handleSex;
 
-## 4 额外说明
+## 3 额外说明
 注意：不使用脚手架或者webpack，直接srcipt标签引入vue.js
 此项目为**成都青云之上信息科技有限公司**的上机测试题，要求2小时完成
